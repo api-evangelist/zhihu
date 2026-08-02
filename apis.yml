@@ -1,9 +1,28 @@
 aid: zhihu
 name: Zhihu
-description: 'Zhihu is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. Sector: media-entertainment. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Zhihu (知乎) is a Chinese online question-and-answer and knowledge-sharing
+  community, often described as China''s answer to Quora, where users post questions
+  and answers, follow topics and creators, and consume long-form content, columns,
+  live sessions, e-books and short video. Founded in 2011 and headquartered in Beijing,
+  Zhihu operates one of China''s largest online content communities and is dual-listed
+  (NYSE: ZH; HKEX: 2390). It was surfaced in the API Evangelist network as a portfolio
+  company of Qiming Venture Partners. As of this enrichment pass Zhihu publishes no
+  public developer platform, open API, SDKs, or machine-readable API artifacts on its
+  primary domain; this profile therefore captures company identity plus a probed
+  domain-security posture rather than an API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/zhihu/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://static.zhihu.com/static/img/favicon.ico
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Media Entertainment
+- Q&A
+- Knowledge Sharing
+- Community
+- Content Platform
+- Social
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/zhihu-domain-security.yml
 - type: Website
   url: https://zhihu.com
+- type: TermsOfService
+  url: https://www.zhihu.com/term/zhihu-terms
+- type: PrivacyPolicy
+  url: https://www.zhihu.com/term/privacy
+- type: InvestorRelations
+  url: https://ir.zhihu.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
